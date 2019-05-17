@@ -3,7 +3,8 @@ import { Component, Vue } from 'vue-property-decorator'
 @Component
 export default class Home extends Vue {
   mounted() {
-    console.log('sdsd')
+    // console.log($fn)
+    $fn.test('23')
   }
 
   render() {

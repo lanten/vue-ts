@@ -4,6 +4,11 @@ module.exports = {
   env: {
     node: true,
   },
+
+  globals: {
+    '$fn': false,
+  },
+
   extends: ['plugin:vue/essential', '@vue/prettier', '@vue/typescript'],
 
   rules: {
