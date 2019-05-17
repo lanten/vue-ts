@@ -1,0 +1,10 @@
+{
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "vue",
+    "typescript",
+    "typescriptreact"
+  ],
+  "vetur.format.defaultFormatter.html": "prettier"
+}
