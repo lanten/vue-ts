@@ -17,7 +17,7 @@ export default class HelloWorld extends Vue {
   @Prop() private msg!: string
 
   mounted() {
-    console.log('12333')
+    console.log('hello world')
   }
 }
 </script>

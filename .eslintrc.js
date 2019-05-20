@@ -21,7 +21,6 @@ module.exports = {
     semi: ['error', 'never'], //强制不使用分号结尾
     'comma-dangle': ['error', 'always-multiline'], // 逗号结束
     'no-param-reassign': 'error', // 禁止对 function 的参数进行重新赋值
-    'eol-last': ['off', 'never'], // 强制文件结尾换行
     'jsx-quotes': ["error", "prefer-double"], // 强制所有 JSX 属性值使用双引号。
   },
 

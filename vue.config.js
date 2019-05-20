@@ -11,6 +11,12 @@ module.exports = {
   },
 
   configureWebpack: {
+    resolve: {
+      alias: {
+        vue$: 'vue/dist/vue.common.js',
+        '@': path.resolve(__dirname, './src'),
+      },
+    },
     plugins: [
       new webpack.ProvidePlugin({
         $fn: path.resolve(__dirname, './src/utils/fn'),

@@ -1,24 +1,20 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> | <router-link to="/about">About</router-link> |
-      <router-link to="/jsx">JSX</router-link>
-    </div>
+    <Navbar />
     <router-view />
   </div>
 </template>
-<script>
-export default {
-  mounted() {
-    console.log('22222')
-    const a = {
-      a: 1,
-      b: 2,
-    }
 
-    a.c = 2
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator'
+import Navbar from '@/components/navbar' // @ is an alias to /src
+
+@Component({
+  components: {
+    Navbar,
   },
-}
+})
+export default class App extends Vue {}
 </script>
 
 <style lang="less">
@@ -28,15 +24,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
 }
 </style>
